@@ -25,6 +25,7 @@ SECRET_KEY = "django-insecure-isj2ni@fyd$ydaugl!e*85h@iu624d*i3&-u14*hldghr6#kxb
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
+# Allow all hosts
 ALLOWED_HOSTS = ["*"]
 
 
@@ -77,6 +78,7 @@ WSGI_APPLICATION = "octofit_tracker.wsgi.application"
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
+# Updated database settings for MongoDB
 DATABASES = {
     "default": {
         "ENGINE": "djongo",
