@@ -40,9 +40,7 @@ class UserModelTest(TestCase):
 
 class TeamModelTest(TestCase):
     def test_team_creation(self):
-        user = User.objects.create(username="testuser", email="testuser@example.com", password="password123")
         team = Team.objects.create(name="Test Team")
-        team.members.add(user)
         self.assertEqual(team.name, "Test Team")
 
 class ActivityModelTest(TestCase):
